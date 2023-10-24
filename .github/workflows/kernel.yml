@@ -1,0 +1,27 @@
+  - name: Push Kaggle Kernel
+  # You may pin to the exact commit or the version.
+  # uses: harupy/push-kaggle-kernel@945fe109d7ae74f11a14b44a0ac446400ab2b2eb
+  uses: harupy/push-kaggle-kernel@v1.0.0
+  with:
+    # Slug of kernel (must be at least five characters).
+    slug: 
+    # Title of kernel (must be at least five characters).
+    title: 
+    # Path to kernel to push (relative from the repo root).
+    code_file: 
+    # Language that kernel is written in. Valid options are ['python', 'r', 'rmarkdown'].
+    language: 
+    # Type of kernel. Valid options are ['script', 'notebook'].
+    kernel_type: 
+    # Whether or not kernel should be private.
+    is_private: # optional, default is true
+    # Whether or not kernel should run on a GPU.
+    enable_gpu: # optional, default is false
+    # Whether or not kernel should be able to access the internet.
+    enable_internet: # optional, default is false
+    # A list of data sources that kernel should use. Each dataset is specified as {username}/{dataset-slug}.
+    dataset_sources: # optional, default is 
+    # A list of competition data sources that kernel should use.
+    competition_sources: # optional, default is 
+    # A list of kernel data sources that kernel should use. Each dataset is specified as {username}/{kernel-slug}.
+    kernel_sources: # optional, default is 
